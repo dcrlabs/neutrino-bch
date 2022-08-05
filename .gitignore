@@ -29,3 +29,10 @@ breakpoints.txt
 
 # coverage output
 profile.cov
+
+*.orig
+*.pprof
+.DS_Store
+
+# Visual Studio Code
+.vscode
