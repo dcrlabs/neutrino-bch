@@ -6,10 +6,11 @@ import (
 	"sync"
 	"time"
 
+	"github.com/dcrlabs/neutrino-bch/blockntfns"
+
 	"github.com/gcash/bchd/chaincfg/chainhash"
 	"github.com/gcash/bchd/wire"
 	"github.com/gcash/bchwallet/wtxmgr"
-	"github.com/gcash/neutrino/blockntfns"
 )
 
 var (

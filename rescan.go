@@ -10,6 +10,9 @@ import (
 	"sync/atomic"
 	"time"
 
+	"github.com/dcrlabs/neutrino-bch/blockntfns"
+	"github.com/dcrlabs/neutrino-bch/headerfs"
+
 	"github.com/gcash/bchd/btcjson"
 	"github.com/gcash/bchd/chaincfg"
 	"github.com/gcash/bchd/chaincfg/chainhash"
@@ -20,8 +23,6 @@ import (
 	"github.com/gcash/bchutil/gcs"
 	"github.com/gcash/bchutil/gcs/builder"
 	"github.com/gcash/bchwallet/waddrmgr"
-	"github.com/gcash/neutrino/blockntfns"
-	"github.com/gcash/neutrino/headerfs"
 )
 
 var (

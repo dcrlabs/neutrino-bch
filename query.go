@@ -8,6 +8,10 @@ import (
 	"sync/atomic"
 	"time"
 
+	"github.com/dcrlabs/neutrino-bch/cache"
+	"github.com/dcrlabs/neutrino-bch/filterdb"
+	"github.com/dcrlabs/neutrino-bch/pushtx"
+
 	"github.com/davecgh/go-spew/spew"
 	"github.com/gcash/bchd/blockchain"
 	"github.com/gcash/bchd/chaincfg/chainhash"
@@ -15,9 +19,6 @@ import (
 	"github.com/gcash/bchutil"
 	"github.com/gcash/bchutil/gcs"
 	"github.com/gcash/bchutil/gcs/builder"
-	"github.com/gcash/neutrino/cache"
-	"github.com/gcash/neutrino/filterdb"
-	"github.com/gcash/neutrino/pushtx"
 )
 
 var (
@@ -246,10 +247,10 @@ func OptimisticReverseBatch() QueryOption {
 //
 // State transitions are:
 //
-// * queryWaitSubmit->queryWaitResponse - send query to peer
-// * queryWaitResponse->queryWaitSubmit - query timeout with no acceptable
-//   response
-// * queryWaitResponse->queryAnswered - acceptable response to query received
+//   - queryWaitSubmit->queryWaitResponse - send query to peer
+//   - queryWaitResponse->queryWaitSubmit - query timeout with no acceptable
+//     response
+//   - queryWaitResponse->queryAnswered - acceptable response to query received
 type queryState uint32
 
 const (

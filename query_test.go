@@ -12,6 +12,11 @@ import (
 	"testing"
 	"time"
 
+	"github.com/dcrlabs/neutrino-bch/cache"
+	"github.com/dcrlabs/neutrino-bch/cache/lru"
+	"github.com/dcrlabs/neutrino-bch/filterdb"
+	"github.com/dcrlabs/neutrino-bch/headerfs"
+
 	"github.com/gcash/bchd/blockchain"
 	"github.com/gcash/bchd/chaincfg"
 	"github.com/gcash/bchd/chaincfg/chainhash"
@@ -19,10 +24,6 @@ import (
 	"github.com/gcash/bchutil"
 	"github.com/gcash/bchutil/gcs"
 	"github.com/gcash/bchutil/gcs/builder"
-	"github.com/gcash/neutrino/cache"
-	"github.com/gcash/neutrino/cache/lru"
-	"github.com/gcash/neutrino/filterdb"
-	"github.com/gcash/neutrino/headerfs"
 )
 
 var (

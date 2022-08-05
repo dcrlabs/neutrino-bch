@@ -1,8 +1,9 @@
 package headerlist
 
 import (
+	"github.com/dcrlabs/neutrino-bch/headerfs"
+
 	"github.com/gcash/bchd/wire"
-	"github.com/gcash/neutrino/headerfs"
 )
 
 // initialIndexCacheSize is the number of headers to load into memory on startup

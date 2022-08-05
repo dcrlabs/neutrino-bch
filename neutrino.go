@@ -12,6 +12,13 @@ import (
 	"sync/atomic"
 	"time"
 
+	"github.com/dcrlabs/neutrino-bch/banman"
+	"github.com/dcrlabs/neutrino-bch/blockntfns"
+	"github.com/dcrlabs/neutrino-bch/cache/lru"
+	"github.com/dcrlabs/neutrino-bch/filterdb"
+	"github.com/dcrlabs/neutrino-bch/headerfs"
+	"github.com/dcrlabs/neutrino-bch/pushtx"
+
 	"github.com/gcash/bchd/addrmgr"
 	"github.com/gcash/bchd/blockchain"
 	"github.com/gcash/bchd/btcjson"
@@ -26,12 +33,6 @@ import (
 	"github.com/gcash/bchutil/gcs/builder"
 	"github.com/gcash/bchwallet/waddrmgr"
 	"github.com/gcash/bchwallet/walletdb"
-	"github.com/gcash/neutrino/banman"
-	"github.com/gcash/neutrino/blockntfns"
-	"github.com/gcash/neutrino/cache/lru"
-	"github.com/gcash/neutrino/filterdb"
-	"github.com/gcash/neutrino/headerfs"
-	"github.com/gcash/neutrino/pushtx"
 )
 
 // These are exported variables so they can be changed by users.

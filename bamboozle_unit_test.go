@@ -6,13 +6,14 @@ import (
 	"sort"
 	"testing"
 
+	"github.com/dcrlabs/neutrino-bch/headerfs"
+
 	"github.com/gcash/bchd/chaincfg"
 	"github.com/gcash/bchd/chaincfg/chainhash"
 	"github.com/gcash/bchd/wire"
 	"github.com/gcash/bchutil/gcs"
 	"github.com/gcash/bchutil/gcs/builder"
 	"github.com/gcash/bchwallet/walletdb"
-	"github.com/gcash/neutrino/headerfs"
 )
 
 func decodeHashNoError(str string) *chainhash.Hash {
