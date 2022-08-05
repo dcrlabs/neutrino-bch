@@ -13,9 +13,11 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/gcash/neutrino/banman"
-	"github.com/gcash/neutrino/blockntfns"
-	"github.com/gcash/neutrino/chainsync"
+	"github.com/dcrlabs/neutrino-bch/banman"
+	"github.com/dcrlabs/neutrino-bch/blockntfns"
+	"github.com/dcrlabs/neutrino-bch/chainsync"
+	"github.com/dcrlabs/neutrino-bch/headerfs"
+	"github.com/dcrlabs/neutrino-bch/headerlist"
 
 	"github.com/gcash/bchd/blockchain"
 	"github.com/gcash/bchd/chaincfg"
@@ -24,8 +26,6 @@ import (
 	"github.com/gcash/bchutil"
 	"github.com/gcash/bchutil/gcs"
 	"github.com/gcash/bchutil/gcs/builder"
-	"github.com/gcash/neutrino/headerfs"
-	"github.com/gcash/neutrino/headerlist"
 )
 
 const (
@@ -2085,7 +2085,7 @@ func (b *blockManager) QueueInv(inv *wire.MsgInv, sp *ServerPeer) {
 	}
 }
 
-/// QueueTx adds the passed transaction message and peer to the block handling
+// QueueTx adds the passed transaction message and peer to the block handling
 // queue. Responds to the done channel argument after the tx message is
 // processed.
 func (b *blockManager) QueueTx(tx *bchutil.Tx, sp *ServerPeer) {

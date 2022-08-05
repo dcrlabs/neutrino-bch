@@ -1,8 +1,9 @@
 package headerlist
 
 import (
+	"github.com/dcrlabs/neutrino-bch/headerfs"
+
 	"github.com/gcash/bchd/wire"
-	"github.com/gcash/neutrino/headerfs"
 )
 
 // Chain is an interface that stores a list of Nodes. Each node represents a

@@ -4,8 +4,9 @@ import (
 	"math/rand"
 	"testing"
 
+	"github.com/dcrlabs/neutrino-bch/blockntfns"
+
 	"github.com/gcash/bchd/wire"
-	"github.com/gcash/neutrino/blockntfns"
 )
 
 // createTx is a helper method to create random transactions that spend

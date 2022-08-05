@@ -9,18 +9,18 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/gcash/bchd/peer"
-	"github.com/gcash/bchd/txscript"
-	"github.com/gcash/bchutil/gcs"
-	"github.com/gcash/neutrino/banman"
+	"github.com/dcrlabs/neutrino-bch/banman"
+	"github.com/dcrlabs/neutrino-bch/blockntfns"
+	"github.com/dcrlabs/neutrino-bch/headerfs"
 
 	"github.com/gcash/bchd/chaincfg"
 	"github.com/gcash/bchd/chaincfg/chainhash"
+	"github.com/gcash/bchd/peer"
+	"github.com/gcash/bchd/txscript"
 	"github.com/gcash/bchd/wire"
+	"github.com/gcash/bchutil/gcs"
 	"github.com/gcash/bchutil/gcs/builder"
 	"github.com/gcash/bchwallet/walletdb"
-	"github.com/gcash/neutrino/blockntfns"
-	"github.com/gcash/neutrino/headerfs"
 )
 
 // maxHeight is the height we will generate filter headers up to. We use an odd

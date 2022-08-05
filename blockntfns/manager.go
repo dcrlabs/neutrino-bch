@@ -6,7 +6,7 @@ import (
 	"sync"
 	"sync/atomic"
 
-	"github.com/gcash/neutrino/blockntfns/queue"
+	"github.com/dcrlabs/neutrino-bch/blockntfns/queue"
 )
 
 var (

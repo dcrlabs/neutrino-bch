@@ -14,7 +14,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/gcash/neutrino/banman"
+	"github.com/dcrlabs/neutrino-bch"
+	"github.com/dcrlabs/neutrino-bch/banman"
 
 	"github.com/gcash/bchd/bchec"
 	"github.com/gcash/bchd/btcjson"
@@ -31,7 +32,6 @@ import (
 	"github.com/gcash/bchwallet/wallet/txauthor"
 	"github.com/gcash/bchwallet/walletdb"
 	_ "github.com/gcash/bchwallet/walletdb/bdb"
-	"github.com/gcash/neutrino"
 )
 
 var (

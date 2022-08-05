@@ -1,9 +1,10 @@
 package cache
 
 import (
+	"github.com/dcrlabs/neutrino-bch/filterdb"
+
 	"github.com/gcash/bchd/chaincfg/chainhash"
 	"github.com/gcash/bchutil/gcs"
-	"github.com/gcash/neutrino/filterdb"
 )
 
 // FilterCacheKey represents the key used to access filters in the FilterCache.

@@ -7,8 +7,8 @@ import (
 	"github.com/gcash/bchd/txscript"
 	"github.com/gcash/bchlog"
 
-	"github.com/gcash/neutrino/blockntfns"
-	"github.com/gcash/neutrino/pushtx"
+	"github.com/dcrlabs/neutrino-bch/blockntfns"
+	"github.com/dcrlabs/neutrino-bch/pushtx"
 )
 
 // log is a logger that is initialized with no output filters.  This
