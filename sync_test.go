@@ -285,6 +285,7 @@ var testCases = []*syncTestCase{
 
 // Make sure the client synchronizes with the correct node.
 func testInitialSync(harness *neutrinoHarness, t *testing.T) {
+	t.Helper()
 	err := waitForSync(t, harness.svc, harness.h1)
 	if err != nil {
 		t.Fatalf("Couldn't sync ChainService: %s", err)
@@ -992,6 +993,9 @@ func testRandomBlocks(harness *neutrinoHarness, t *testing.T) {
 }
 
 func TestNeutrinoSync(t *testing.T) {
+	if testing.Short() {
+		return
+	}
 	// Set up logging.
 	logger := bchlog.NewBackend(os.Stdout)
 	chainLogger := logger.Logger("CHAIN")
