@@ -208,6 +208,7 @@ github.com/gcash/bchwallet/walletdb v0.0.0-20210524044131-61bcca2ae6f9 h1:lryOGJ
 github.com/gcash/bchwallet/walletdb v0.0.0-20210524044131-61bcca2ae6f9/go.mod h1:KNPI56t8uMlItrGyu3tS4NCd3jGfA6KjdUg4bsk+QJg=
 github.com/gcash/neutrino v0.0.0-20210524024247-f7bf0435d155/go.mod h1:91zIrel7tOt35+0hAN8Rrr7O07LZrR9b98Nk4AcC/Lg=
 github.com/gcash/neutrino v0.0.0-20210524083541-2900eef48821/go.mod h1:ud/wsgR459Qy+HmEAoQZF9XPTYaOYep5df8ynowCnLs=
+github.com/gcash/neutrino v0.0.0-20210524105223-4cec86bbd8a4 h1:CFXcaAlSkzKSsXph7WIhQBtQqxqUVSqOT2ixW+lia5I=
 github.com/gcash/neutrino v0.0.0-20210524105223-4cec86bbd8a4/go.mod h1:YBR6T+ZT02eR1S7JGqJ2gVPxZlfjWswTCXB4HZafp/U=
 github.com/ghodss/yaml v1.0.0/go.mod h1:4dBDuWmgqj2HViK6kFavaiC9ZROes6MMH2rRYeMEF04=
 github.com/gin-contrib/sse v0.1.0/go.mod h1:RHrZQHXnP2xjPF+u1gW/2HnVO7nvIa9PG3Gm+fLHvGI=
@@ -481,6 +482,7 @@ github.com/letsencrypt/pkcs11key/v4 v4.0.0/go.mod h1:EFUvBDay26dErnNb70Nd0/VW3tJ
 github.com/lib/pq v1.0.0/go.mod h1:5WUZQaWbwv1U+lTReE5YruASi9Al49XbQIvNi/34Woo=
 github.com/lib/pq v1.8.0/go.mod h1:AlVN5x4E4T544tWzH6hKfbfQvm3HdbOxrmggDNAPY9o=
 github.com/lib/pq v1.9.0/go.mod h1:AlVN5x4E4T544tWzH6hKfbfQvm3HdbOxrmggDNAPY9o=
+github.com/lightninglabs/gozmq v0.0.0-20191113021534-d20a764486bf h1:HZKvJUHlcXI/f/O0Avg7t8sqkPo78HFzjmeYFl6DPnc=
 github.com/lightninglabs/gozmq v0.0.0-20191113021534-d20a764486bf/go.mod h1:vxmQPeIQxPf6Jf9rM8R+B4rKBqLA2AjttNxkFBL2Plk=
 github.com/lightstep/lightstep-tracer-common/golang/gogo v0.0.0-20190605223551-bc2310a04743/go.mod h1:qklhhLq1aX+mtWk9cPHPzaBjWImj5ULL6C7HFJtXQMM=
 github.com/lightstep/lightstep-tracer-go v0.18.1/go.mod h1:jlF1pusYV4pidLvZ+XD0UBX0ZE6WURAspgAczcDHrL4=
