@@ -8,12 +8,12 @@ import (
 
 	"github.com/dcrlabs/neutrino-bch/headerfs"
 
+	"github.com/dcrlabs/bchwallet/walletdb"
 	"github.com/gcash/bchd/chaincfg"
 	"github.com/gcash/bchd/chaincfg/chainhash"
 	"github.com/gcash/bchd/wire"
 	"github.com/gcash/bchutil/gcs"
 	"github.com/gcash/bchutil/gcs/builder"
-	"github.com/gcash/bchwallet/walletdb"
 )
 
 func decodeHashNoError(str string) *chainhash.Hash {

@@ -7,10 +7,10 @@ import (
 
 	"github.com/dcrlabs/neutrino-bch/headerfs"
 
+	"github.com/dcrlabs/bchwallet/waddrmgr"
 	"github.com/gcash/bchd/blockchain"
 	"github.com/gcash/bchd/chaincfg/chainhash"
 	"github.com/gcash/bchd/wire"
-	"github.com/gcash/bchwallet/waddrmgr"
 )
 
 // mockBlockHeaderStore is an implementation of the BlockHeaderStore backed by

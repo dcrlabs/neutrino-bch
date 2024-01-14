@@ -6,9 +6,9 @@ import (
 	"sync/atomic"
 	"time"
 
+	"github.com/dcrlabs/bchwallet/waddrmgr"
 	"github.com/gcash/bchd/chaincfg/chainhash"
 	"github.com/gcash/bchutil"
-	"github.com/gcash/bchwallet/waddrmgr"
 )
 
 // getUtxoResult is a simple pair type holding a spend report and error.

@@ -7,11 +7,11 @@ import (
 	"testing"
 	"time"
 
+	"github.com/dcrlabs/bchwallet/waddrmgr"
 	"github.com/gcash/bchd/chaincfg/chainhash"
 	"github.com/gcash/bchd/wire"
 	"github.com/gcash/bchutil"
 	"github.com/gcash/bchutil/gcs"
-	"github.com/gcash/bchwallet/waddrmgr"
 )
 
 type MockChainClient struct {

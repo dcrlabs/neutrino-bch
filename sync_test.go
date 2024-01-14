@@ -17,6 +17,10 @@ import (
 	"github.com/dcrlabs/neutrino-bch"
 	"github.com/dcrlabs/neutrino-bch/banman"
 
+	"github.com/dcrlabs/bchwallet/waddrmgr"
+	"github.com/dcrlabs/bchwallet/wallet/txauthor"
+	"github.com/dcrlabs/bchwallet/walletdb"
+	_ "github.com/dcrlabs/bchwallet/walletdb/bdb"
 	"github.com/gcash/bchd/bchec"
 	"github.com/gcash/bchd/btcjson"
 	"github.com/gcash/bchd/chaincfg"
@@ -28,10 +32,6 @@ import (
 	"github.com/gcash/bchlog"
 	"github.com/gcash/bchutil"
 	"github.com/gcash/bchutil/gcs/builder"
-	"github.com/gcash/bchwallet/waddrmgr"
-	"github.com/gcash/bchwallet/wallet/txauthor"
-	"github.com/gcash/bchwallet/walletdb"
-	_ "github.com/gcash/bchwallet/walletdb/bdb"
 )
 
 var (

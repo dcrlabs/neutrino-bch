@@ -13,6 +13,7 @@ import (
 	"github.com/dcrlabs/neutrino-bch/blockntfns"
 	"github.com/dcrlabs/neutrino-bch/headerfs"
 
+	"github.com/dcrlabs/bchwallet/waddrmgr"
 	"github.com/gcash/bchd/btcjson"
 	"github.com/gcash/bchd/chaincfg"
 	"github.com/gcash/bchd/chaincfg/chainhash"
@@ -22,7 +23,6 @@ import (
 	"github.com/gcash/bchutil"
 	"github.com/gcash/bchutil/gcs"
 	"github.com/gcash/bchutil/gcs/builder"
-	"github.com/gcash/bchwallet/waddrmgr"
 )
 
 var (

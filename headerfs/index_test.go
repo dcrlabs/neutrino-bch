@@ -7,8 +7,8 @@ import (
 	"os"
 	"testing"
 
-	"github.com/gcash/bchwallet/walletdb"
-	_ "github.com/gcash/bchwallet/walletdb/bdb"
+	"github.com/dcrlabs/bchwallet/walletdb"
+	_ "github.com/dcrlabs/bchwallet/walletdb/bdb"
 )
 
 func createTestIndex() (func(), *headerIndex, error) {
