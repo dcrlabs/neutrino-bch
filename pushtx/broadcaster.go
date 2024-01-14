@@ -8,9 +8,9 @@ import (
 
 	"github.com/dcrlabs/neutrino-bch/blockntfns"
 
+	"github.com/dcrlabs/bchwallet/wtxmgr"
 	"github.com/gcash/bchd/chaincfg/chainhash"
 	"github.com/gcash/bchd/wire"
-	"github.com/gcash/bchwallet/wtxmgr"
 )
 
 var (

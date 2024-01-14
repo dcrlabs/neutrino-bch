@@ -19,6 +19,8 @@ import (
 	"github.com/dcrlabs/neutrino-bch/headerfs"
 	"github.com/dcrlabs/neutrino-bch/pushtx"
 
+	"github.com/dcrlabs/bchwallet/waddrmgr"
+	"github.com/dcrlabs/bchwallet/walletdb"
 	"github.com/gcash/bchd/addrmgr"
 	"github.com/gcash/bchd/blockchain"
 	"github.com/gcash/bchd/btcjson"
@@ -31,8 +33,6 @@ import (
 	"github.com/gcash/bchutil"
 	"github.com/gcash/bchutil/gcs"
 	"github.com/gcash/bchutil/gcs/builder"
-	"github.com/gcash/bchwallet/waddrmgr"
-	"github.com/gcash/bchwallet/walletdb"
 )
 
 // These are exported variables so they can be changed by users.

@@ -8,7 +8,7 @@ import (
 	"net"
 	"time"
 
-	"github.com/gcash/bchwallet/walletdb"
+	"github.com/dcrlabs/bchwallet/walletdb"
 )
 
 var (
